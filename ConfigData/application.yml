@@ -1,0 +1,21 @@
+---
+# Items that apply to ALL profiles:
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8010/eureka/
+---
+spring.config.activate.on-profile: usd
+rates: 40,42
+  
+---
+spring.config.activate.on-profile: eur
+rates: 46,48
+
+---
+spring.config.activate.on-profile: zloty
+rates: 10,11.7
+
+---
+spring.config.activate.on-profile: yen
+rates: 0.20,0.35
